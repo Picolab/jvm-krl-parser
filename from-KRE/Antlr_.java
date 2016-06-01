@@ -107,7 +107,6 @@
 
         public String ruleset(String krl) throws org.antlr.runtime.RecognitionException {
             try {
-                System.out.println("In Java: " + krl);
                 org.antlr.runtime.ANTLRStringStream input = new org.antlr.runtime.ANTLRStringStream(krl);
                 com.kynetx.RuleSetLexer lexer = new com.kynetx.RuleSetLexer(input);
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
