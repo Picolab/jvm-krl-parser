@@ -17,10 +17,10 @@
 # Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
 # MA 02111-1307 USA
 #
-. ./myclasspath.sh
+export CLASSPATH=`pwd`/lib/antlr-3.3-complete.jar:`pwd`/output/classes:.
 java org.antlr.Tool RuleSet.g -o output
 mkdir -p output/classes
-javac -d output/classes  output/RuleSet*.java json_java/*.java ParseRuleset.java FullParserReport.java SimpleMethod.java RubyRulesetParser.java
+javac -d output/classes output/RuleSet*.java src/org/json/*.java src/ParseRuleset.java src/FullParserReport.java src/SimpleMethod.java src/RubyRulesetParser.java
 cd output/classes
 jar -xf ../../lib/antlr-3.3-complete.jar
 jar -cf ../../krl_parser.jar *
