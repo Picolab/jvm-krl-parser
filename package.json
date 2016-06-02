@@ -1,6 +1,6 @@
 {
   "name": "jvm-krl-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "extracting the KRL parser from KRE",
   "main": "index.js",
   "files": [
