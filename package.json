@@ -1,0 +1,28 @@
+{
+  "name": "jvm-krl-parser",
+  "version": "0.0.0",
+  "description": "extracting the KRL parser from KRE",
+  "main": "index.js",
+  "files": [
+    "parser/krl_parser.jar",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Picolab/jvm-krl-parser.git"
+  },
+  "keywords": [
+    "krl",
+    "parser",
+    "jvm"
+  ],
+  "author": "farskipper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Picolab/jvm-krl-parser/issues"
+  },
+  "homepage": "https://github.com/Picolab/jvm-krl-parser#readme"
+}
