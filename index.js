@@ -1,7 +1,10 @@
+var path = require('path');
 var execFile = require('child_process').execFile;
 
+var jar_path = path.resolve(__dirname, 'parser/krl_parser.jar');
+
 module.exports = function(file, callback){
-  execFile('java', ['-jar', 'parser/krl_parser.jar', file], function(err, stdout, stderr){
+  execFile('java', ['-jar', jar_path, file], function(err, stdout, stderr){
     if(err){
       callback(err);
       return;
